@@ -830,5 +830,8 @@
 
     <!--  Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">2</integer>
+
+    <!-- Pocket Lock -->
+    <bool name="config_pocketModeSupported">false</bool>
     
 </resources>
