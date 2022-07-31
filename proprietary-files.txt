@@ -1497,19 +1497,30 @@ vendor/firmware/goodix_firmware.bin
 
 # Thermal
 vendor/bin/mi_thermald
-vendor/lib64/libthermalclient.so
+vendor/etc/init/init.mi_thermald.rc
+-vendor/lib/libthermalclient.so
+-vendor/lib64/libthermalclient.so
+
+# Thermal-engine
+vendor/bin/thermal-engine
+vendor/etc/init/init_thermal-engine.rc
 
 # Thermal config
+vendor/etc/thermal-arvr.conf
 vendor/etc/thermal-camera.conf
 vendor/etc/thermal-class0.conf
 vendor/etc/thermal-engine.conf
+vendor/etc/thermal-extreme.conf
+vendor/etc/thermal-high.conf
 vendor/etc/thermal-map.conf
 vendor/etc/thermal-mgame.conf
+vendor/etc/thermal-nevigation.conf
 vendor/etc/thermal-nolimits.conf
 vendor/etc/thermal-normal.conf
 vendor/etc/thermal-phone.conf
 vendor/etc/thermal-tgame.conf
 vendor/etc/thermal-video.conf
+vendor/etc/thermal-youtube.conf
 vendor/etc/thermald-devices.conf
 
 # Trusted Execution Environment connector
