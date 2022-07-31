@@ -254,13 +254,6 @@ service vendor.cnss_diag /system/vendor/bin/cnss_diag -q -f -t HELIUM
    group system wifi inet sdcard_rw media_rw diag
    oneshot
 
-#ExtR HONGMI-90116,wufa@wingtech.com,add,20210908,add mi_thermal
-service mi_thermald /system/vendor/bin/mi_thermald	
-    class main
-    user root
-    group system
-    seclabel u:r:mi_thermald:s0
-#-ExtR HONGMI-90116,wufa@wingtech.com,add,20210908,add mi_thermal
 
 service svi_on /vendor/bin/ppd "svi:on"
     class main
