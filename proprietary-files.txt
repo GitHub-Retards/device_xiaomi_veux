@@ -520,6 +520,7 @@ vendor/lib64/libmmcamera_mfnr.so
 
 # Charger (Mi Turbo Charge)
 vendor/bin/batterysecret
+vendor/etc/init/init.batterysecret.rc
 
 # CDSP
 vendor/bin/cdsprpcd
