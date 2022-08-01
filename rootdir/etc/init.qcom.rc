@@ -33,10 +33,6 @@ import /vendor/etc/init/hw/init.target.rc
 import /vendor/etc/init/hw/init.qcom.factory.rc
 
 on early-init
-    mount debugfs debugfs /sys/kernel/debug
-    chmod 0755 /sys/kernel/debug
-    mount tracefs tracefs /sys/kernel/tracing
-    chmod 0755 /sys/kernel/tracing
 
   # create symlink for vendor mount points
     symlink /vendor/firmware_mnt /firmware
@@ -367,9 +363,6 @@ on post-fs-data
     rm /data/vendor/perfd/default_values
 
     mkdir /data/vendor/secure_element 0777 system system
-
-    #Create IOP  deamon related dirs
-    mkdir /data/vendor/iop 0700 root system
 
     # Mark the copy complete flag to not completed
     write /data/vendor/radio/copy_complete 0
