@@ -1,3 +1,4 @@
+
 #
 # Copyright (C) 2021 The LineageOS Project
 #
@@ -6,20 +7,22 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk) 
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common dotOS stuff.
-$(call inherit-product, vendor/dot/config/common.mk)
+# Inherit some common lineage stuff.
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
-# Inherit from veux device
+# Inherit from alioth device
 $(call inherit-product, device/xiaomi/veux/device.mk)
 
-PRODUCT_NAME := dot_veux
+PRODUCT_NAME := spark_veux
 PRODUCT_DEVICE := veux
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X4 Pro 5G
 
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_SUPPORTS_QUICK_TAP := true
 # Blur
 TARGET_SUPPORTS_BLUR := true
 
