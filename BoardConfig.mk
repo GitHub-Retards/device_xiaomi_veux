@@ -62,6 +62,7 @@ ALLOW_MISSING_DEPENDENCIES := true
 RELAX_USES_LIBRARY_CHECK := true
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := holi
 TARGET_NO_BOOTLOADER := true
@@ -208,7 +209,7 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security Patch Level
-VENDOR_SECURITY_PATCH := 2022-05-01
+VENDOR_SECURITY_PATCH := 2022-07-01
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
