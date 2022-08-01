@@ -517,7 +517,6 @@
             <instance>TouchCompanionService</instance>
         </interface>
     </hal>
-    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.limits</name>
         <version>1.0</version>
