@@ -520,14 +520,14 @@ vendor/lib64/libmmcamera_mfnr.so
 
 # Charger (Mi Turbo Charge)
 vendor/bin/batterysecret
+vendor/etc/init/init.batterysecret.rc
 
 # CDSP
 vendor/bin/cdsprpcd
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
-vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
-vendor/lib64/libmdsprpc.so
-vendor/lib64/libsdsprpc.so
+vendor/lib64/libcdsp_default_listener.so
+vendor/lib64/libsysmon_cdsp_skel.so
 
 # CNE
 vendor/app/CneApp/lib/arm64/libvndfwk_detect_jni.qti.so
@@ -1479,12 +1479,19 @@ vendor/firmware/goodix_firmware.bin
 
 # Thermal
 vendor/bin/mi_thermald
-vendor/lib64/libthermalclient.so
+vendor/etc/init/init.mi_thermald.rc
+-vendor/lib/libthermalclient.so
+-vendor/lib64/libthermalclient.so
+
+# Thermal-engine
+vendor/bin/thermal-engine
+vendor/etc/init/init_thermal-engine.rc
 
 # Thermal config
 vendor/etc/thermal-arvr.conf
 vendor/etc/thermal-camera.conf
 vendor/etc/thermal-class0.conf
+vendor/etc/thermal-engine.conf
 vendor/etc/thermal-extreme.conf
 vendor/etc/thermal-high.conf
 vendor/etc/thermal-map.conf
