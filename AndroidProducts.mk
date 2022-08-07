@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/spark_veux.mk
+    $(LOCAL_DIR)/voltage_veux.mk
 
 COMMON_LUNCH_CHOICES := \
-    spark_veux-user \
-    spark_veux-userdebug \
-    spark_veux-eng
+    voltage_veux-user \
+    voltage_veux-userdebug \
+    voltage_veux-eng

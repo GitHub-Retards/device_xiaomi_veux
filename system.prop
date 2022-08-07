@@ -45,9 +45,3 @@ ril.subscription.types=NV,RUIM
 
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
-
-# Spark-OS
-ro.spark.device.name=Redmi Note 11 Pro+
-ro.spark.group.url=https://t.me/pocox4proofficial
-ro.spark.maintainer=😎😎😎 [Busy]
-ro.spark.maintainer.username=Busy_AF_2
